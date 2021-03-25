@@ -7,4 +7,4 @@ This project is an interactive visual retrospect of digital cameras over the pas
 The website is hosted on [Vercel](vercel.com), and can be accessed [here](https://digicam-data-story.now.sh/).
 
 ## Source
-All the data used in this project were scraped from [Digital Camera Database](https://www.digicamdb.com/). Details about the scraper scripts can be found [here](../scraper).
+All the data used in this project were scraped from [Digital Camera Database](https://www.digicamdb.com/). Details about the scraper scripts can be found [here](/scraper).

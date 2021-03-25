@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Visual Retrospect of Digital Cameras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+<body>
+    <div id="tooltip">
+
+    </div>
+    <div id='graphic'>
+        <div id='sections'>
+            <section class='step'>
+                <div class="title"></div>
+                <br><br>
+                <h1>
+                    A Visual Retrospect
+                    <br>
+                    of
+                    Digital Cameras
+                </h1>
+                <h3>
+                    <span id='cam-number'>0</span> released cameras
+                    <br>
+                    by <span id='company-number'>0</span> companies
+                    <br>
+                    from <span id='start-year'>0</span> to <span id='end-year'>9999</span>
+                </h3>
+                <p>Created by Yufeng Zhao</p>
+                <p>
+                    <i>hover through the dots to investigate</i>
+                    <br>
+                    <sub><i>default colors represent different brands</i></sub>
+                </p>
+
+
+
+            </section>
+
+            <section class='step'>
+                <h2>
+                    Image Sensor
+                </h2>
+                <hr>
+                <div id='image-sensor-div'>
+                    <p>
+                        Digital cameras uses electronic image sensors to capture light. Therefore, the technology behind
+                        the
+                        <b>image sensor</b> is crucial for better image quality.
+
+                    </p>
+                    <img src="https://s23527.pcdn.co/wp-content/uploads/2018/05/canonapsh120.jpg.optimal.jpg"
+                        width='200px'>
+                    <p>
+                        Over the past decades, digital cameras benefit from advanced electronic manufacturing. As
+                        semiconductors get smaller, more pixels can be packed into a single sensor, resulting in a
+                        sharper
+                        and clearer image.
+                    </p>
+                </div>
+                <hr>
+                <p class='check-box-p'>
+                    <input type="checkbox" id="check-sensor-type">
+                    <label><b>Colorize Sensor Technology</b></label><br>
+                </p>
+
+
+            </section>
+
+            <section class='step'>
+                <h2>
+                    Sensor Form Factor
+                </h2>
+                <hr>
+                <div id='sensor-form-factor-div'>
+                    <p>
+                        A <b>Full-Frame</b> digital camera is one with an image sensor format that
+                        is the same size as <b>35 mm format film</b>.
+                    </p>
+                    <img src="https://i.ebayimg.com/images/g/6GUAAOSwMilciT0T/s-l1600.jpg" width='200px'>
+                    <p>
+                        Historically, 35 mm was considered a small
+                        film format compared with medium format, large format and even larger. However, due to high
+                        defect
+                        rate of larger digital image sensor, <b>smaller form factors</b> are much more commonly seen.
+                    </p>
+                    <p>
+                        If under the same glass, smaller sensors cover a <b>smaller field of view</b> and thus a
+                        <b>magnified perspective</b>.
+                    </p>
+                </div>
+                <hr>
+                <p class='check-box-p'>
+                    <input type="checkbox" id="check-lens-system">
+                    <label><b>Colorize Type of Lens System</b></label><br>
+                </p>
+
+
+            </section>
+
+            <section class='step'>
+                <h2>
+                    Camera Body Form Factor
+                </h2>
+                <hr>
+                <p>
+                    <label for="select-body-info"><b>Visualizing</b></label>
+
+                    <select id="select-body-info">
+                        <option value="weight">Weight</option>
+                        <option value="size">Size</option>
+                    </select>
+                </p>
+                <div id='body-form-factor-div'>
+                    <p>
+
+                    </p>
+                </div>
+                <p>
+                    <label for="select-body-info"><b>In Comparison With</b></label>
+
+                    <select id="select-body-info-comparison">
+                        <option value="nothing">Nothing</option>
+                        <option value="sensor_size">Sensor Size</option>
+                        <option value="megapixels">Sensor Resolution</option>
+
+                    </select>
+                </p>
+                <div id='body-form-factor-div-2'>
+
+                </div>
+            </section>
+            <section class='step'>
+                <h2>Explore More Yourself</h2>
+                <hr>
+                <p>
+                    <label for="select-vis-end"><b>Sort by</b></label>
+
+                    <select id="select-vis-end">
+                        <option value="nothing">Nothing</option>
+                        <option value="megapixels">Sensor Resolution</option>
+                        <option value="sensor_size">Sensor Size</option>
+                        <option value="weight">Weight</option>
+                        <option value="body_size">Body Size</option>
+                        <option value="scr_res">Screen Resolution</option>
+                        <option value="scr_size">Screen Size</option>
+                        <option value="high_iso">Highest ISO</option>
+                        <option value="low_iso">Lowest ISO</option>
+                        <option value="min_shutter">Slowest Shutter Speed</option>
+                        <option value="max_shutter">Fastest Shutter Speed</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="select-color-end"><b> Colorize by</b></label>
+
+                    <select id="select-color-end">
+                        <option value="brand">Brand</option>
+                        <option value="raw">RAW Support</option>
+                        <option value="ap">Aperture Priority Mode</option>
+                        <option value="sp">Shutter Priority Mode</option>
+                        <option value="int_flash">Internal Flash</option>
+                        <option value="ext_flash">External Flash Support</option>
+                        <option value="usb">USB</option>
+                        <option value="hdmi">HDMI</option>
+                        <option value="Wireless">Wi-Fi</option>
+                        <option value="battery">Battery Type</option>
+                    </select>
+                </p>
+                <hr>
+                <sub><i>continue scrolling up to hide this section</i></sub>
+
+            </section>
+            <section class='step'>
+            </section>
+
+
+        </div>
+
+        <div id='viz'>
+
+        </div>
+
+    </div>
+
+    <script src='scripts/scroller.js'></script>
+    <script src='scripts/section_html.js'></script>
+
+    <script src='scripts/sections.js'></script>
+</body>
+
+</html>

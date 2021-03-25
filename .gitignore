@@ -8,3 +8,4 @@
 # Local History for Visual Studio Code
 .history/
 .DS_Store
+.vscode/settings.json

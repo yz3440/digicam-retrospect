@@ -34,5 +34,5 @@ This project is an interactive data story to present a visual retrospect of digi
 ## Source
 All the data used in this project were scraped from [Digital Camera Database](https://www.digicamdb.com/). Details about my scraper scripts can be found [here](/scraper).
 
-
-
+## Notes
+This work is completed under the course [Critical Data & Visualization](https://github.com/leoneckert/critical-data-and-visualization-spring-2020) taught by [Leon Eckert](https://leoneckert.com/) at NYU Shanghai.
